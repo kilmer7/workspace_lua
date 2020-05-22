@@ -1,0 +1,48 @@
+android...
+
+//Primeira Vez
+-----------------------------------------------------------------------------
+Create a new repository on the command line:
+
+echo '# nome que vc escolher' >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/kilmer7/workspace_android.git
+git push -u origin master
+-----------------------------------------------------------------------------
+
+//Segunda em diante
+-----------------------------------------------------------------------------
+Abra o bash no diretorio do projeto, se vc estiver no diretorio certo vai aparecer a branch que vc esta trabalhando no final entre parênteses
+git pull - baixa a última versão que estiver no branch
+-----------------------------------------------------------------------------
+
+Atualizar alguma coisa, pela primeira vez.
+
+//Passo 1º 
+-----------------------------------------------------------------------------
+git checkout -b 'nome da branch(sem aspas simples)' - cria um novo ramo
+git add . - adicionar arquivos para subir
+git commit -m "msg" - msg descrevendo qual foi a mudança
+git push --set-upstream origin 'nome da branch' - sobe para o ramo e inicia um pull request
+-----------------------------------------------------------------------------
+
+Outra forma de atualizar alguma coisa.
+
+//Passo 2º
+-----------------------------------------------------------------------------
+git checkout 'nome da branch(sem aspas simples)' - entra no ramo que já existe
+git add . - adicionar arquivos para subir
+git commit -m "msg" - msg descrevendo qual foi a mudança
+git push origin 'nome da branch' - sobe o projeto para a branch
+*Dentro do git hub tu mergea oque vc acabou de subir com a master
+-----------------------------------------------------------------------------
+
+Independente de qual passo vc fez, esse deve ser feito.
+
+//Passo 3º
+-----------------------------------------------------------------------------
+git checkout master - troca para o ramo master
+git pull - atualiza a master local
+-----------------------------------------------------------------------------
